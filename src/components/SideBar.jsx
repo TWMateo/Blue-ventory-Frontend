@@ -42,18 +42,18 @@ const SideBar = (props) => {
           <img className="mt-0 w-[100%]" src={BVentoryIcon} />
         </Link>
         <ul
-          className={`flex flex-col justify-center items-center animate-fade`}
+          className={`flex flex-col w-[100%] justify-center items-center animate-fade`}
         >
           {opciones.length > 0 ? (
             opciones.map((el, index) => (
               <li
-                className={`text-lg md:w-[100%] mt-5 hover:bg-blue-500 rounded-md`}
+                className={`text-lg flex flex-col align-middle justify-center w-[80%] sm:w-[90%] mt-5 hover:bg-blue-500 rounded-md`}
                 key={index}
               >
-                <Link className={`flex`} to={`${el.href}`}>
-                  <i className={`${el.icon} m-5`} />
+                <Link className={`flex justify-center items-center"`} to={`${el.href}`}>
+                  <i className={`${el.icon} m-5 w-[50%]`} />
                   <h3
-                    className={`m-5 animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden lg:flex"}`}
+                    className={`m-5 ml-2 animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden lg:flex"}`}
                   >
                     {el.name}
                   </h3>

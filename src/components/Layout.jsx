@@ -12,7 +12,7 @@ const Layout = () => {
       <div className="flex h-screen">
         <div
           className={`${
-            accionSideBar.open ? "w-[15%] md:w-[18%]" : "w-[13%] "
+            accionSideBar.open ? "w-[17%]" : "w-[15%] lg:w-[10%] "
           } duration-1000`}
         >
           <SideBar valor={accionSideBar.open} />

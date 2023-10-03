@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <body
-        className={`flex flex-col justify-center items-center h-[90%] bg-gray-700`}
+        className={`flex flex-col justify-center items-center h-[90%] bg-gray-700 w-[100%]`}
       >
         <div className="bg-gray-600">
           <h3 className="animate-fade-up animate-delay-300">
