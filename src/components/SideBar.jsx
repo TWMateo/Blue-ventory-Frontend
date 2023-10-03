@@ -51,9 +51,9 @@ const SideBar = (props) => {
                 key={index}
               >
                 <Link className={`flex justify-center items-center"`} to={`${el.href}`}>
-                  <i className={`${el.icon} m-5 w-[50%]`} />
+                  <i className={`${el.icon} m-5 w-[20%]`} />
                   <h3
-                    className={`m-5 ml-2 animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden lg:flex"}`}
+                    className={`m-5 ml-2 w-[80%] items-center animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden lg:flex"}`}
                   >
                     {el.name}
                   </h3>

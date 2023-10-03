@@ -17,7 +17,7 @@ const Layout = () => {
         >
           <SideBar valor={accionSideBar.open} />
         </div>
-        <main className={`container`}>
+        <main className={`container h-screen`}>
           <Header valor={accionSideBar.open} />
           <Outlet context={{ homeSideBar: accionSideBar.open }} />
         </main>
