@@ -47,13 +47,13 @@ const SideBar = (props) => {
           {opciones.length > 0 ? (
             opciones.map((el, index) => (
               <li
-                className={`text-lg w-[100%] mt-5 hover:bg-blue-500 rounded-md`}
+                className={`text-lg md:w-[100%] mt-5 hover:bg-blue-500 rounded-md`}
                 key={index}
               >
                 <Link className={`flex`} to={`${el.href}`}>
                   <i className={`${el.icon} m-5`} />
                   <h3
-                    className={`m-5 animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden md:flex"}`}
+                    className={`m-5 animate-fade animate-delay-300 ${!props.valor ? "hidden" : "hidden lg:flex"}`}
                   >
                     {el.name}
                   </h3>
