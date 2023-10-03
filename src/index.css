@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Pixelify Sans", cursive;
+  font-family: "Roboto", sans-serif;
+}
