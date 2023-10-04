@@ -11,7 +11,7 @@ const SideBar = (props) => {
       name: "Productos",
       icon: "fa-solid fa-shirt",
       funct: "Administrador",
-      href: "/Productos",
+      href: "/Productos/1/4",
     },
     {
       name: "Ventas",
