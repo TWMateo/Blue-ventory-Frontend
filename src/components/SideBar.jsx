@@ -53,7 +53,7 @@ const SideBar = (props) => {
                 <Link className={`flex justify-center items-center"`} to={`${el.href}`}>
                   <i className={`${el.icon} m-5 ${props.valor && "lg:w-[20%]"}`} />
                   <h3
-                    className={`m-5 ml-2 items-center animate-fade animate-delay-300 ${!props.valor ? "w-0 hidden" : "w-0 hidden lg:flex lg:w-[80%]"}`}
+                    className={`text-white mt-4 m-5 ml-2 items-center animate-fade animate-delay-300 ${!props.valor ? "w-0 hidden" : "w-0 hidden lg:flex lg:w-[80%]"}`}
                   >
                     {el.name}
                   </h3>
