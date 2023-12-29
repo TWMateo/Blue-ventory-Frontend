@@ -36,7 +36,7 @@ const SideBar = (props) => {
   return (
     <>
       <aside
-        className={`flex flex-col items-center bg-blue-600 border border-black h-screen`}
+        className={`flex flex-col items-center border border-b-0 border-black h-screen`}
       >
         <Link className="flex flex-col items-center" to={"/"}>
           <img className="mt-0 w-[100%]" src={BVentoryIcon} />
@@ -47,13 +47,13 @@ const SideBar = (props) => {
           {opciones.length > 0 ? (
             opciones.map((el, index) => (
               <li
-                className={`text-lg flex flex-col align-middle justify-center w-[80%] sm:w-[90%] mt-5 hover:bg-blue-500 rounded-md`}
+                className={`text-lg flex flex-col align-middle justify-center w-[80%] sm:w-[90%] mt-5 hover:bg-blue-400 rounded-md`}
                 key={index}
               >
                 <Link className={`flex justify-center items-center"`} to={`${el.href}`}>
                   <i className={`${el.icon} m-5 ${props.valor && "lg:w-[20%]"}`} />
                   <h3
-                    className={`text-white mt-4 m-5 ml-2 items-center animate-fade animate-delay-300 ${!props.valor ? "w-0 hidden" : "w-0 hidden lg:flex lg:w-[80%]"}`}
+                    className={`text-black mt-4 m-5 ml-2 items-center animate-fade animate-delay-300 ${!props.valor ? "w-0 hidden" : "w-0 hidden lg:flex lg:w-[80%]"}`}
                   >
                     {el.name}
                   </h3>
